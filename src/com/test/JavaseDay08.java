@@ -188,6 +188,7 @@ class Students extends Personu{
     }
     //重写
     public void eat(double height) {
+        super.eat(1.1);//调用父类同名方法
         System.out.println("heightheightheightheight");
         System.out.println(height);
     }
