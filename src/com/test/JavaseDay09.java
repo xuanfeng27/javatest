@@ -191,3 +191,50 @@ class InterC implements InterA,InterB{
         System.out.println(a+"interb");
     }
 }
+
+//练习
+interface InterfaceA{
+    void printCapitalLetter();
+}
+interface InterfaceB{
+    void printLowerCaseLetter();
+}
+class Print implements InterfaceA,InterfaceB {
+
+    @Override
+    public void printCapitalLetter() {
+       for (char i='A';i<='Z';i++){
+           System.out.print(i+" ");
+       }
+    }
+
+    @Override
+    public void printLowerCaseLetter() {
+        for (char j='a';j<='z';j++){
+            System.out.print(j+" ");
+        }
+    }
+}
+class TestFace{
+    public static void main(String[] args){
+        InterfaceA a = new Print();
+        a.printCapitalLetter();
+        InterfaceB b = new Print();
+        b.printLowerCaseLetter();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
